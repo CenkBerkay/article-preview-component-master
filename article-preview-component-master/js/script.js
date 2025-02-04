@@ -5,17 +5,6 @@ const shareSection = document.getElementById("share-section");
 
 function toggleSection() {
   shareSection.classList.toggle("visible");
-  changeButtonColors();
-}
-
-function changeButtonColors() {
-  if (shareSection.classList.contains("visible")) {
-    shareButton1.style.backgroundColor = "var(--grey-500)";
-    shareIcon.style.fill = "var(--white)";
-  } else {
-    shareButton1.style.backgroundColor = "";
-    shareIcon.style.fill = "";
-  }
 }
 
 shareButton1.addEventListener("click", toggleSection);
