@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", serif;
+}
+
+button {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+  font-size: 0.75rem;
+  line-height: 160%;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1rem;
+  color: hsl(217, 19%, 35%);
+  line-height: 140%;
+}
+
+h3 {
+  font-size: 0.85em;
+}
+
+.card_image {
+  border-radius: 0.75rem 0.75rem 0 0;
+  object-fit: cover;
+  height: 185px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 2em;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.2),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+}
+
+.card_footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em 1em 2em;
+  align-items: center;
+  color: hsl(214, 17%, 51%);
+  gap: 1em;
+}
+
+.card_details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.footer_avatar {
+  border-radius: 50%;
+  width: 2.75rem;
+}
+
+.article__share-section {
+  display: none;
+}
+
+.article__share-section.visible {
+  position: absolute;
+
+  background-color: var(--grey-900);
+  padding: 16px 30px;
+  width: 100%;
+  min-height: 76px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article__social-details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.article__share-text {
+  color: var(--grey-400);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height);
+  letter-spacing: 3.25px;
+  text-transform: uppercase;
+}
+
+.article__share-section button {
+  background-color: var(--grey-500);
+}
+
+.article__share-section .article__share-icon path {
+  fill: var(--white);
+}
